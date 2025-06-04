@@ -1,0 +1,109 @@
+/* about.css */
+
+:root {
+    --primary-color: #003366; /* Dark Blue */
+    --secondary-color: #00509E; /* Medium Blue */
+    --accent-color: #008CBA; /* Bright Blue */
+    --light-color: #E0F7FA; /* Light Blue */
+    --text-color: #FFFFFF; /* White */
+    --dark-text-color: #333333; /* Dark Gray */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.cta {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
